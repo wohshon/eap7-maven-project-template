@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-    <wb-module deploy-name="jboss-ejb-in-ear">
+    <wb-module deploy-name="jeeapp">
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/ear-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/application" tag="defaultRootSource"/>
-        <dependent-module archiveName="jboss-ejb-in-ear-web.war" deploy-path="/" handle="module:/resource/jboss-ejb-in-ear-web/jboss-ejb-in-ear-web">
+        <dependent-module archiveName="jeeapp-web.war" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/demo/jeeapp-web/1.0/jeeapp-web-1.0.war">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="jboss-ejb-in-ear-ejb.jar" deploy-path="/" handle="module:/resource/jboss-ejb-in-ear-ejb/jboss-ejb-in-ear-ejb">
+        <dependent-module archiveName="jeeapp-ejb.jar" deploy-path="/" handle="module:/classpath/var/M2_REPO/com/demo/jeeapp-ejb/1.0/jeeapp-ejb-1.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-jms-api_2.0_spec.jar" deploy-path="/lib" handle="module:/classpath/var/M2_REPO/org/jboss/spec/javax/jms/jboss-jms-api_2.0_spec/1.0.0.Final-redhat-1/jboss-jms-api_2.0_spec-1.0.0.Final-redhat-1.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>

@@ -42,6 +42,12 @@
     </licenses>
 
     <dependencies>
+        <dependency>
+                <groupId>org.jboss.spec.javax.servlet</groupId>
+                <artifactId>jboss-servlet-api_3.1_spec</artifactId>
+                <scope>provided</scope>
+        </dependency>
+    
 
         <!-- Import the ejb project so that the JSF managed bean can use the EJB -->
         <dependency>
