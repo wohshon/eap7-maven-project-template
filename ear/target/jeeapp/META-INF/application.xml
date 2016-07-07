@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd" version="6">
+  <description>This project demonstrates how to package an EJB and WAR in an EAR; this is the EAR POM file</description>
+  <display-name>jeeapp-ear</display-name>
+  <module>
+    <web>
+      <web-uri>jeeapp-web.war</web-uri>
+      <context-root>/jeeapp</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>jeeapp-ejb.jar</ejb>
+  </module>
+  <library-directory>lib</library-directory>
+</application>
